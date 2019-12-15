@@ -27,6 +27,21 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.get('/', function (req, res) {
+  res.render('index', {
+   title: 'POETI',
+   poeta: poeta.profiles
+ });
+});
+
+app.get('/profile', (req, res) => {
+  const poeti = poeta.profiles.find((p) => p.id === req.query.id);
+  res.render('profile', {
+    title: `Dettagli ${poeti.firstname} ${poeti.lastname}`,
+    poeti,
+  });
+});
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

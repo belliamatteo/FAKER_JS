@@ -1,0 +1,94 @@
+{
+ "profiles": [
+   {
+     "firstname": "Gabriele",
+     "lastname": "D'Annunzio",
+     "mail": "gabri.dann@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Gabriele_D%27Annunzio",
+     "nazionalita": "ITALIA",
+     "imgSrc": "gabri.jpg",
+     "id": "gabri"
+   },
+    {
+     "firstname": "Francesco",
+     "lastname": "D'Assisi",
+     "mail": "fra.dass@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Francesco_d%27Assisi",
+     "nazionalita": "ITALIA",
+     "imgSrc": "fra.jpg",
+     "id": "fra"
+   },
+      {
+     "firstname": "Primo",
+     "lastname": "Levi",
+     "mail": "primo.levi@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Primo_Levi",
+     "nazionalita": "ITALIA",
+     "imgSrc": "primo.jpg",
+     "id": "primo"
+   },
+      {
+     "firstname": "Ugo",
+     "lastname": "Foscolo",
+     "mail": "ugo.fosc@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Ugo_Foscolo",
+     "nazionalita": "ITALIA",
+     "imgSrc": "ugo.jpg",
+     "id": "ugo"
+   },
+      {
+     "firstname": "Alda",
+     "lastname": "Merini",
+     "mail": "alda.meri@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Alda_Merini",
+     "nazionalita": "ITALIA",
+     "imgSrc": "alda.jpg",
+     "id": "alda"
+   },
+      {
+     "firstname": "Giacomo",
+     "lastname": "Leopardi",
+     "mail": "gia.leo@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Giacomo_Leopardi",
+     "nazionalita": "ITALIA",
+     "imgSrc": "leo.jpg",
+     "id": "leo"
+   },
+      {
+     "firstname": "Eugenio",
+     "lastname": "Montale",
+     "mail": "eu.monta@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Eugenio_Montale",
+     "nazionalita": "ITALIA",
+     "imgSrc": "eu.jpg",
+     "id": "eu"
+   },
+      {
+     "firstname": "Luigi",
+     "lastname": "Pirandello",
+     "mail": "gigi.pira@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Luigi_Pirandello",
+     "nazionalita": "ITALIA",
+     "imgSrc": "gigi2.jpg",
+     "id": "gigi"
+   },
+      {
+     "firstname": "Giovanni",
+     "lastname": "Pascoli",
+     "mail": "giova.pasc@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Giovanni_Pascoli",
+     "nazionalita": "ITALIA",
+     "imgSrc": "giova.jpg",
+     "id": "giova"
+   },
+      {
+     "firstname": "Giuseppe",
+     "lastname": "Ungaretti",
+     "mail": "giuse.unga@gmail.com",
+     "sitoweb": "https://it.wikipedia.org/wiki/Giuseppe_Ungaretti",
+     "nazionalita": "ITALIA",
+     "imgSrc": "giuse.jpg",
+     "id": "giuse"
+   }
+ ]
+}
