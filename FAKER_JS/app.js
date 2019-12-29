@@ -19,27 +19,36 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var serviceRouter = require('./routes/services');
+
+var app = express();
+const fs = require('fs');
+var faker = require('faker');
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/services', serviceRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
-});
-
-app.get('/', function (req, res) {
-  res.render('index', {
-   title: 'POETI',
-   poeta: poeta.profiles
- });
-});
-
-app.get('/profile', (req, res) => {
-  const poeti = poeta.profiles.find((p) => p.id === req.query.id);
-  res.render('profile', {
-    title: `Dettagli ${poeti.firstname} ${poeti.lastname}`,
-    poeti,
-  });
 });
 
 // error handler

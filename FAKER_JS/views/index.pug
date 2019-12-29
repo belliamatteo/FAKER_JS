@@ -1,5 +1,12 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+    head
+        link(rel='stylesheet', href='/css/style.css')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body.style
+        each poet in poeti
+            div
+                
+                a(href=`/users/profile?id=${poet.id}`)
+                    h1 #{poet.nome}
+                    img(src = `${poet.immagine}`)

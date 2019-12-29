@@ -1,14 +1,12 @@
-extends layout //Qui diciamo di copiare il contenuto della pagina layout
-
-block content //Qui inizia il contenuto della nuova pagina
- h1 #{poeta.name}  //Recupero il nome del poeta
- .card(style='width: 18rem;')
-   .card-body
-     h5.card-title #{poeta.translations.it} //Recupero la traduzione italiana dello stato ...
-    
-   ul.list-group.list-group-flush
-     li.list-group-item Mail: #{poeta.mail}
-     li.list-group-item SitoWeb: #{poeta.sitoweb}
-     li.list-group-item Nazionalità #{poeta.nazionalita}
-   .card-body
-     a.card-link(href=`${poeta.wiki}` ,  target="_blank") Pagina Wikipedia
+doctype html
+html
+    head
+        link(rel='stylesheet', href='/css/style.css')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+    body.style
+        div
+            h1 #{r.nome}
+            img(src = `${r.immagine}`)
+            p #{r.email}
+            p #{r.sitoWeb}
+            p #{r.nazionalita}
